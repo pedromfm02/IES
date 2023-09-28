@@ -1,0 +1,16 @@
+<Configuration status="warn">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p %m%n" />
+        </Console>
+        <File name="logfile" fileName="logging_file.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p %m%n" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="console" />
+            <appender-ref ref="logfile" />
+        </Root>
+    </Loggers>
+</Configuration>
