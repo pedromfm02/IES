@@ -16,7 +16,7 @@ public class AnyCityForecast {
         toolkit = Toolkit.getDefaultToolkit();
         timer = new Timer();
         timer.scheduleAtFixedRate(new RemindTask(), 0, //initial delay
-            10 * 1000); //subsequent rate
+            20 * 1000); //subsequent rate
     }
 
     class RemindTask extends TimerTask {

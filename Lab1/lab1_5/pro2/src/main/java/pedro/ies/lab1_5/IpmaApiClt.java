@@ -19,8 +19,6 @@ public class IpmaApiClt {
 
     public IpmaApiClt() {
         
-        
-
          // get a retrofit instance, loaded with the GSon lib to convert JSON into objects
          Retrofit retrofit = new Retrofit.Builder()
          .baseUrl("http://api.ipma.pt/open-data/")
@@ -28,7 +26,7 @@ public class IpmaApiClt {
          .build();
 
         // create a typed interface to use the remote API (a client)
-        IpmaService service = retrofit.create(IpmaService.class);
+        service = retrofit.create(IpmaService.class);
     }
 
     private List<Integer> getAvailableCities() {
@@ -46,12 +44,11 @@ public class IpmaApiClt {
         Random random = new Random();
         List<Integer> cityList = getAvailableCities();
         IpmaCityForecast forecast = null;
-        IpmaCities cities = getCitiesData();
-        ListIterator<CityData> citiesIterator = cities.getData().listIterator();
 
-        city_id = random.nextInt(cityList.size());
 
-        forecast = getCityForecastFromId(city_id);
+        int lst_pos = random.nextInt(cityList.size());
+        city_id = cityList.get(lst_pos);
+        forecast = getCityForecastFromId(cityList.get(lst_pos));
 
         return forecast;
     }
