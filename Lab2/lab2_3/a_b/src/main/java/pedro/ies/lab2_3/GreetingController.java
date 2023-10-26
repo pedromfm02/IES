@@ -1,4 +1,4 @@
-package main.java.pedro.ies.lab2_3;
+package pedro.ies.lab2_3;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
