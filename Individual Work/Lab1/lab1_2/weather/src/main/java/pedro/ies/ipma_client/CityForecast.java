@@ -1,4 +1,4 @@
-package ies.lbs.ipma_client;
+package pedro.ies.ipma_client;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

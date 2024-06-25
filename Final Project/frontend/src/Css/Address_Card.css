@@ -1,0 +1,42 @@
+* {
+  color: #ffffff;
+}
+
+body {
+  background-color: #222222;
+}
+
+.card-address{
+  background-color: #19191a;
+  margin-top: 2rem;
+  height: 10rem;
+  width: 25rem;
+}
+
+.form, input, label, p, h4{
+  color: white !important;
+  text-align: center;
+}
+
+.parent-address {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  height: 18rem; 
+  width: 21vw;
+}
+  
+.div1-address {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 13vh;
+  border-radius: 5%;
+}
+.div2-address {
+  grid-area: 1 / 2 / 2 / 4;
+  margin-top: 3rem;
+}
+.div3-address {
+  grid-area: 2 / 1 / 4 / 4;
+}

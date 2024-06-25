@@ -1,4 +1,4 @@
-package ies.lbs.ipma_client;
+package pedro.ies.ipma_client;
 
 
 import retrofit2.Call;
